@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryDark"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- SERVICE INPUT -->
+    <EditText
+        android:id="@+id/serviceInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter service"
+        android:padding="10dp"/>
+
+    <!-- ADD SERVICE -->
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Service"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"/>
+
+    <!-- REMOVE SERVICE -->
+    <Button
+        android:id="@+id/removeServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:text="Remove Service"
+        android:layout_marginTop="5dp"/>
+
+    <!-- VIEW REQUESTS -->
+    <Button
+        android:id="@+id/viewRequestsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Requests"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/white"/>
+
+    <!-- VIEW USERS (DELETE USERS) -->
+    <Button
+        android:id="@+id/viewUsersBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Users"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <!-- LIST DISPLAY -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
